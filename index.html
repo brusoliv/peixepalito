@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cafill | Café com Refil</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="menu">
+    <a href="#cardapio">Cardápio</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <header>
+    <h1>Cafill</h1>
+    <p>Refil de sabor, amor e café.</p>
+  </header>
+
+  <section class="hero">
+    <div class="cup">
+      <div class="steam"></div>
+      <div class="steam delay1"></div>
+      <div class="steam delay2"></div>
+    </div>
+  </section>
+
+  <section id="cardapio" class="cardapio">
+    <h2>Nosso Cardápio</h2>
+    <div class="filtros">
+      <button onclick="filtrarCardapio('cafe')">Cafés</button>
+      
+      <button onclick="filtrarCardapio('combo')">Combos</button>
+    </div>
+
+    <div class="itens">
+      <div class="item cafe">Espresso Tradicional</div>
+      <div class="item cafeleite">Café com Leite</div>
+      <div class="item combocfbn">Combo Refil + Brownies</div>
+      <div class="item combocfw">Combo Refil + Waffles</div>
+      <div class="item combocfpqc">Combo Refil + Panquecas</div>
+      <div class="item combocfpdq">Combo Refil + Pão de queijo</div>
+      <div class="item combocfsm">Combo Refil + S'more</div>
+
+      <div class="item combocfck">Combo Refil + Coockies</div>
+
+    </div>
+  </section>
+
+  <section id="contato" class="contato">
+    <h2>Seja membro Cafill infinito!</h2>
+    <h5>Cadastre-se e tenha um ano de café infinito</h5>
+    <form action="#" method="POST">
+      <input type="text" name="nome" placeholder="Seu nome" required />
+      <input type="email" name="email" placeholder="Seu email" required />
+      <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Cafill. Amor em cada gole.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
